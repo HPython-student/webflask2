@@ -1,4 +1,4 @@
-/* body {
+body {
     background-color: rgb(30, 93, 113);
     display: flex;
     justify-content: center;
@@ -7,13 +7,4 @@
     height: 100vh;
     text-align: center;
 
-} */
-
-body {
-    background-image: url("/static/img/palmera.jpeg");
-    background-size: cover;      /* se ajusta al tamaño de pantalla */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* para que se quede fijo al hacer scroll */
-    background-position: center; /* centrado */
-    font-family: 'Arial', sans-serif;
 }
