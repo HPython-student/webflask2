@@ -1,6 +1,6 @@
 
 body {
-        background-image: url("/static/img/Palmera.jpeg");
+        background-image: url("/static/img/palmera.jpeg");
         background-size: cover;      /* se ajusta al tamaño de pantalla */
         background-repeat: no-repeat;
         background-attachment: fixed; /* para que se quede fijo al hacer scroll */
