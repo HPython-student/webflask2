@@ -1,10 +1,7 @@
-body {
-    background-color: rgb(30, 93, 113);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    text-align: center;
 
+body {
+    background-size: cover;      /* se ajusta al tamaño de pantalla */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* para que se quede fijo al hacer scroll */
+        background-position: center; /* cen
 }
