@@ -1,7 +1,17 @@
 
 body {
-    background-size: cover;      /* se ajusta al tamaño de pantalla */
+        background-image: url("/static/img/Palmera.jpeg");
+        background-size: cover;      /* se ajusta al tamaño de pantalla */
         background-repeat: no-repeat;
         background-attachment: fixed; /* para que se quede fijo al hacer scroll */
-        background-position: center; /* cen
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+
+        font-family: 'Poppins', sans-serif;
+
 }
