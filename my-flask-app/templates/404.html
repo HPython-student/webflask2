@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina no encontrada</title>
+    <link rel="stylesheet" href="{{ url_for('statics', filename='estilos.css')}}">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>error 404- Pagina no encontrada</h1>
+        <p>La pagina que buscas no existe o no ha sido movida</p>
+        <a href="{{url_for('home')}}" class="btn btn-primary">Volver al inicio</a>
+    </div>
+</body>
+</html>

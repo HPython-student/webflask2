@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css')}}">
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <h2 class="mb-4">Gracias por la informacion</h2>
+
+        <div class="alert alert-success">
+            <p><strong>Nombre: </strong>{{ nombre }}</p>
+            <p><strong>Apellido: </strong>{{ apellido }}</p>
+            <p><strong>Cumpleaños: </strong>{{ cumple }}</p>
+        </div>
+       
+    
+        <form action="/" method="get">
+            <button type="submit" class="btn btn-primary mt-3">Volver al inicio</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>
