@@ -17,6 +17,10 @@ def set_secure_headers(response):
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
 
+@app.route("/AskAboutWeb")
+def infoDeWeb():
+    return render_template("pregunstas.html")
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
