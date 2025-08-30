@@ -17,7 +17,7 @@ def set_secure_headers(response):
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
 
-@app.route("/AskAboutWeb")
+@app.route("/faqs")
 def infoDeWeb():
     return render_template("pregunstas.html")
 
