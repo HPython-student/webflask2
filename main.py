@@ -17,6 +17,10 @@ def set_secure_headers(response):
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
 
+@app.route("/PP")
+def Politica():
+    return render_template("PoPri.html")
+
 @app.route("/contact")
 def Contactar():
     return render_template("contacto.html")
