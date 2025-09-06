@@ -17,7 +17,11 @@ def set_secure_headers(response):
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
 
-@app.route("/faqs")
+@app.route("/contact")
+def Contactar():
+    return render_template("contacto.html")
+
+@app.route("/AskAboutWeb")
 def infoDeWeb():
     return render_template("pregunstas.html")
 
@@ -63,3 +67,4 @@ def counter():
 
 if __name__ == "__main__":
     app.run(debug=False)
+
