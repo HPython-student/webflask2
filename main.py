@@ -9,11 +9,12 @@ visit_count = 0
 
 @app.after_request
 def set_secure_headers(response):
-    response.headers['X-Frame-Options'] = 'Deny'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
     response.headers['Content-Security-Policy'] = (
         "default-scr 'self'; "
         "style-src 'self' https://cdn.jsdelivr.net;"
         "script-src 'self' https://cdn.jsdelivr.net;"
+        "frame-src https://www.google.com https://www.google.com.mx;"
     )
     response.headers['X-Content-Type-Options'] = 'nosniff'
     response.headers['X-XSS-Protection'] = '1; mode=block'
