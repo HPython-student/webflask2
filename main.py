@@ -19,6 +19,10 @@ def set_secure_headers(response):
     response.headers['X-XSS-Protection'] = '1; mode=block'
     return response
 
+@app.route("/Ubicacion")
+def Ubi():
+    return render_template("Uv.html")
+
 @app.route("/PP")
 def Politica():
     return render_template("PoPri.html")
