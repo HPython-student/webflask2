@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nuestra Ubicacion</title>
+    <link href="https://cdn.jsdelivr.net/nmp/bootstrap@5.3.7/dist/css/bootstrap.mic.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="ratio ratio-16x9">
+      <iframe
+        scr="https://maps.app.goo.gl/qV92subqwRtEGnNa8"
+        width="600"
+        height="450"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-reffer-when-downgrade">
+      </iframe>
+      <div>
+        <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Volver al inicio</a>
+      </div>
+  </body>
+</html>
