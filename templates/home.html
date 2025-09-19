@@ -10,22 +10,26 @@
 <body>
     <div class="container">
         <h1 class="mb-4">Bienvenido a mi questionario</h1>
-        <form action="/test" method="get">
-            <button type="submit" class="btn btn-primary btn-lg">Iniciar test</button>
-        </form>
-        <form action="AskAboutWeb" method="get">
-            <button type="" class="btn btn-primary btn-lg">Preguntas sobre la informacion</button>
-        </form>
-        <form action="/PP" method="get">
-            <button type="submit" class="btn btn-primary btn-lg">Politicas de Privacidad</button>
-        </form>
-        <form action="/contact" method="get">
-            <button type="submit" class="btn btn-primary btn-lg">Contacto</button>
-        </form>
-         <form action="/Ubicacion" method="get">
-            <button type="submit" class="btn btn-primary btn-lg">Ubicacion de las installaciones</button>
-        </form>
-        <p> Visitas totales: {{ count }}</p>
+
+        <div class="d-felx gap-2">
+                    
+            <form action="/test" method="get">
+                <button type="submit" class="btn btn-primary btn-lg">Iniciar test</button>
+            </form>
+            <form action="AskAboutWeb" method="get">
+                <button type="" class="btn btn-primary btn-lg">Preguntas sobre la informacion</button>
+            </form>
+            <form action="/PP" method="get">
+                <button type="submit" class="btn btn-primary btn-lg">Politicas de Privacidad</button>
+            </form>
+            <form action="/contact" method="get">
+                <button type="submit" class="btn btn-primary btn-lg">Contacto</button>
+            </form>
+             <form action="/Ubicacion" method="get">
+                <button type="submit" class="btn btn-primary btn-lg">Ubicacion de las installaciones</button>
+            </form>
+            <p> Visitas totales: {{ count }}</p>
+        </div>
     </div>
 </body>
 </html>
